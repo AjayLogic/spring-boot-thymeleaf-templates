@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout">
+<head>
+    <title>Index</title>
+</head>
+<body>
+    <section layout:fragment="content">
+        <p>This is a fragment from index page</p>
+    </section>
+
+    <footer>
+        <p layout:fragment="custom-footer">This is some footer content from index page</p>
+    </footer>
+    <!--<div th:include="layout">-->
+        <!--header nuevo-->
+    <!--</div>-->
+</body>
+</html>

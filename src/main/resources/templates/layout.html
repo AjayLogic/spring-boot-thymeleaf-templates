@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+
+    <section layout:fragment="content">
+        <p>Page content goes here</p>
+    </section>
+
+    <footer>
+        <p>My Footer</p>
+        <p layout:fragment="custom-footer">Cutsom Footer Here</p>
+    </footer>
+
+    <!--<div>-->
+        <!--Algo arriba-->
+    <!--</div>-->
+    <!--<header th:fragment="site-header">Header</header>-->
+    <!--<div th:fragment="site-content"></div>-->
+    <!--en layout-->
+    <!--<footer th:fragment="site-footer"></footer>-->
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!--<script>-->
+        <!--$(document).ready(function () {-->
+            <!--alert("Desde el layout");-->
+        <!--});-->
+    <!--</script>-->
+</body>
+</html>
